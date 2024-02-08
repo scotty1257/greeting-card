@@ -11,26 +11,44 @@
 			font-family: 'Annie Use Your Telescope', cursive;								
 
 		}
+		.img-container {
+			background-image: url('hearts.webp');
+			background-size: 200px;
+			background-repeat: no-repeat;
+			overflow:hidden;
+			height: 130px;
+			margin: none;
+			padding: none;
+			align-items: center;
+			margin: auto;
+			left: 50%;
+			width: 200px;
+		}
 		.container {					
 			margin: auto;
 			text-align: center;	
 			width: 500px;
 			height: 500px;
 			position: absolute;
-			top: 50%;
+			top: 45%;
 			left: 50%;
 			margin: -250px 0 0 -250px;		
 			font-family: 'Annie Use Your Telescope', cursive;
+/*			background-image: url('hearts.webp');
+			background-size: 300px;
+			background-repeat: no-repeat;
+			overflow:hidden;*/
+
 		}
 		h1 {
 			color: #ff2644;			
-			font-size: 60px;
+			font-size: 76px;
 			margin: 0px;
-			text-shadow: 5px 5px rgba(255, 0, 0, 0.2);
+			text-shadow: 1px 2px rgba(255, 0, 255, 0.9);
 		}
 		button {
 			border: none;
-			width: 80px;
+			width: 120px;
 			height: 54;
 			border-radius: 10%;
 			font-size: 18px;
@@ -65,7 +83,7 @@
 			padding: 10px;			
 		}
 		p {
-			font-size: 20px;
+			font-size: 29px;
 			color: hotpink;
 			font-weight: bolder;
 		}
@@ -78,6 +96,9 @@
 <body>
 	
 	<div class="container">
+		<div class="img-container">
+			
+		</div>
 		<h1>Haley</h1>
 		<h1>Danson</h1>
 
@@ -85,14 +106,19 @@
 
 		<div class="bc">
 			<ul>
-				<li><button>Yes</button></li>
-				<li><button>No</button></li>
+				<li><button onclick="sayYes()">Yes</button></li>
+				<li><button onclick="sayNo()">No</button></li>
 			</ul>				
 		</div>
-		
-
-
 	</div>
+	<script type="text/javascript">
+		function sayYes() {
+			alert("Hooray!")
+		}
 
+		function sayNo() {
+			alert("Aghh, My Heart!")
+		}
+	</script>
 </body>
 </html>
